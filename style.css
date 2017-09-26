@@ -1,0 +1,240 @@
+* {
+	position: absolute;
+}
+
+#container-opening {
+	background-color: rgb(51,139, 133);
+	border-radius: 100%;
+	height: 50px;
+	left: 125px;
+	top: 20px;
+	width: 300px;
+	z-index: 1;
+}
+
+#container-neck {
+	background-color: rgb(43, 58, 70);
+	height: 80px;
+	left: 125px;
+	top: 45px;
+	width: 300px;
+}
+
+#container-body {
+	background-color: rgb(43, 58, 70);
+	border-radius: 250px 250px 100px 100px;
+	height: 700px;
+	top: 80px;
+	width: 550px;
+}
+
+#pebbles {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	height: 80px;
+	left: 55px;
+	top: 680px;
+	width: 480px;
+}
+
+#pebbles * {
+	margin: 1px;
+	position: relative;
+	background-color: rgb(252, 253, 255);
+	border-radius: 22px 28px 23px 17px;
+	height: 20px;
+	width: 31px;
+}
+
+#pebbles :nth-child(3n) {
+	background-color: rgb(252, 184, 50);
+	border-radius: 25px 22px 30px 21px;
+	height: 23px;
+	width: 31px;
+}
+
+#pebbles :nth-child(3n+2) {
+	background-color: rgb(233, 225, 196);
+	border-radius: 20px 30px 22px 18px;
+	height: 24px;
+	width: 33px;
+}
+
+#pebbles :nth-child(4n+4) {
+	background-color: rgb(205, 209, 203);
+	border-radius: 40px 30px 10px 15px;
+	height: 31px;
+	width: 34px;
+}
+
+#pebbles :nth-child(9n) {
+	background-color: rgb(236, 149, 158);
+	border-radius: 25px 30px 20px 19px;
+	height: 21px;
+	width: 34px;
+}
+
+#pebbles :nth-child(27) {
+	background-color: rgb(43, 58, 70);
+	height: 5px;
+	width: 340px;
+}
+
+#pebbles :nth-child(33) {
+	background-color: rgb(43, 58, 70);
+	height: 5px;
+	width: 350px;
+}
+
+#pebbles :nth-child(5n) {
+	height: 15px;
+}
+
+#pebbles :nth-child(2n+4) {
+	transform: rotate(30deg);
+}
+
+#pebbles :nth-child(3n+1) {
+	transform: rotate(-10deg);
+}
+
+#ground {
+	background-color: rgb(235, 235, 115);
+	border-radius: 20% 50% 110% 15%;
+	height: 160px;
+	left: 20px;
+	top: 530px;
+	width: 510px;
+}
+
+.flower div {
+	background-color: rgb(255, 128, 37);
+	border-radius: 100%;
+	height: 29%;
+	width: 11%;
+}
+
+.flower div:nth-of-type(1) {
+	left: 20%;
+	transform: rotate(-10deg);
+}
+
+.flower div:nth-of-type(2) {
+	left: 35%;
+	top: 8%;
+	transform: rotate(50deg);
+}
+
+.flower div:nth-of-type(3) {
+	left: 35%;
+	top: 25%;
+	transform: rotate(130deg);
+}
+
+.flower div:nth-of-type(4) {
+	left: 15%;
+	top: 25%;
+	transform: rotate(210deg);
+}
+
+.flower div:nth-of-type(5) {
+	left: 8%;
+	top: 10%;
+	transform: rotate(280deg);
+}
+
+.flower div:nth-of-type(6) {
+	background-color: rgb(235, 235, 115);
+	height: 5%;
+	left: 25%;
+	top: 25%;
+	width: 5%;
+}
+
+#flower1 {
+	left: 65px;
+	top: 590px;
+	transform: rotate(-12deg);
+	height: 150px;
+	width: 150px;
+}
+
+#flower2 {
+	left: 140px;
+	transform: rotate(18deg);
+	top: 610px;
+	height: 150px;
+	width: 150px;
+}
+
+#flower3 {
+	left: 25px;
+	top: 570px;
+	transform: rotate(15deg);
+	height: 75px;
+	width: 75px;
+}
+
+#flower4 {
+	left: 360px;
+	top: 610px;
+	transform: rotate(-5deg);
+	height: 80px;
+	width: 80px;
+}
+
+#flower5 {
+	left: 400px;
+	top: 610px;
+	transform: rotate(15deg);
+	height: 75px;
+	width: 75px;
+}
+
+#tree * {
+	background-color: rgb(214, 223, 232);
+}
+
+#tree :nth-child(1) {
+	height: 350px;
+	left: 140px;
+	top: 220px;
+	width: 35px;
+}
+
+#tree :nth-child(2), #tree :nth-child(5) {
+	height: 70px;
+	top: 225px;
+	width: 12px;
+}
+
+#tree :nth-child(3), #tree :nth-child(6) {
+	height: 77px;
+	top: 275px;
+	width: 16px;
+}
+
+#tree :nth-child(4), #tree :nth-child(7) {
+	height: 82px;
+	top: 325px;
+	width: 19px;
+}
+
+#tree :nth-child(2), #tree :nth-child(3), #tree :nth-child(4) {
+	left: 120px;
+	transform: rotate(-35deg);
+}
+
+#tree :nth-child(5), #tree :nth-child(6), #tree :nth-child(7) {
+	left: 180px;
+	transform: rotate(35deg);
+}
+
+#leaves {
+	background-color: rgb(37, 139, 139);
+	border-radius: 70%;
+	height: 300px;
+	left: 70px;
+	top: 145px;
+	width: 180px;
+}
