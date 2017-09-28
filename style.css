@@ -26,6 +26,7 @@
 	height: 700px;
 	top: 80px;
 	width: 550px;
+	z-index: -2;
 }
 
 #pebbles {
@@ -237,4 +238,418 @@
 	left: 70px;
 	top: 145px;
 	width: 180px;
+}
+
+#boy {
+	left: 260px;
+	top: 460px;
+}
+
+#boy #face, #boy #l-ear, #boy #r-ear, #boy #neck, #boy #l-hand, #boy #r-hand {
+	border-radius: 100%;
+	background-color: rgb(247, 193, 193);
+}
+
+#boy #face {
+	height: 45px;
+	left: 2px;
+	width: 52px;
+}
+
+#boy #neck {
+	height: 10px;
+	left: 22px;
+	top: 38px;
+	width: 10px;
+	z-index: 1;
+}
+
+#boy #l-ear {
+	height: 12px;
+	top: 10px;
+	transform: rotate(20deg);
+	width: 10px;
+}
+
+#boy #r-ear {
+	height: 15px;
+	left: 50px;
+	top: 18px;
+	transform: rotate(23deg);
+	width: 12px;
+}
+
+#boy #hair {
+	align-content: space-around;
+	background-color: rgb(255, 128, 37);
+	border-radius: 120px 120px 10px 10px;
+	display: flex;
+	height: 23px;
+	left: 3px;
+	top: -9px;
+	transform: rotate(6deg);
+	width: 52px;
+}
+
+#boy #hair * {
+	background-color: rgb(255, 128, 37);
+	border-radius: 100%;
+	height: 20px;
+	position: relative;
+	top: 10px;
+	width: 20px;
+}
+
+#boy #l-eye, #boy #r-eye {
+	border-bottom: solid black 2px;
+	border-radius: 100%;
+	height: 5px;
+	transform: rotate(5deg);
+	width: 10px;
+}
+
+#boy #l-eye {
+	left: 10px;
+	top: 18px;
+}
+
+#boy #r-eye {
+	left: 30px;
+	top: 20px;
+}
+
+#boy #nose {
+	background-color: black;
+	left: 25px;
+	height: 8px;
+	top: 27px;
+	transform: rotate(7deg);
+	width: 2px;
+}
+
+#boy #mouth {
+	border-bottom: solid 2px red;
+	border-radius: 100%;
+	height: 5px;
+	left: 20px;
+	top: 33px;
+	width: 10px;
+	z-index: 2;
+}
+
+#boy #torso, #boy #legs, #boy #l-arm, #boy #r-arm, #boy #l-leg, #boy #r-leg {
+	background-color: rgb(37, 139, 139);
+}
+
+#boy #torso {
+	height: 50px;
+	left: 15px;
+	top: 38px;
+	width: 24px;
+	z-index: -1;
+}
+
+#boy #legs {
+	border-radius: 10px;
+	height: 36px;
+	left: 10px;
+	top: 65px;
+	transform: rotate(-45deg);
+	width: 37px;
+}
+
+#boy #l-leg {
+	border-radius: 20px;
+	height: 16px;
+	left: 25px;
+	top: 60px;
+	transform: rotate(-35deg);
+	width: 35px;
+}
+
+#boy #r-leg {
+	border-radius: 20px;
+	height: 16px;
+	left: 25px;
+	top: 77px;
+	transform: rotate(-30deg);
+	width: 48px;
+}
+
+#boy #l-arm {
+	border-radius: 20px 0 0 20px;
+	height: 12px;
+	left: -8px;
+	top: 50px;
+	transform: rotate(-50deg);
+	width: 35px;
+	z-index: -1;
+}
+
+#boy #r-arm {
+	border-radius: 20px 0 0 20px;
+	height: 12px;
+	left: 28px;
+	top: 50px;
+	transform: rotate(55deg);
+	width: 35px;
+	z-index: -1;
+}
+
+#boy #l-hand { 
+	border-radius: 0 0 100% 100%;
+	left: -5px;
+	height: 10px;
+	top: 65px;
+	transform: rotate(30deg);
+	width: 10px;
+}
+
+#boy #r-hand { 
+	border-radius: 0 0 100% 100%;
+	left: 48px;
+	height: 10px;
+	top: 65px;
+	transform: rotate(-30deg);
+	width: 10px;
+}
+
+#mom {
+	left: 320px;
+	top: 420px;
+}
+
+#mom #face, #mom #neck, #mom #l-leg, #mom #r-leg, #mom #l-arm, #mom #r-arm {
+	border-radius: 100%;
+	background-color: rgb(247, 193, 193);
+}
+
+#mom #l-hair {
+	background-color: rgb(37, 139, 139);
+	border-radius: 100%;
+	height: 58px;
+	left: -8px;
+	top: -10px;
+	width: 65px;
+	z-index: -1;
+}
+
+#mom #top-hair {
+	background-color: rgb(37, 139, 139);
+	border-radius: 100%;
+	height: 52px;
+	left: 23px;
+	top: -21px;
+	transform: rotate(-65deg);
+	width: 23px;
+}
+
+#mom #r-hair {
+	background-color: rgb(37, 139, 139);
+	border-radius: 100%;
+	height: 45px;
+	left: 41px;
+	transform: rotate(-10deg);
+	width: 20px;
+}
+
+#mom #face {
+	height: 50px;
+	left: 2px;
+	width: 55px;
+}
+
+#mom #neck {
+	height: 10px;
+	left: 23px;
+	top: 45px;
+	width: 10px;
+	z-index: 1;
+}
+
+#mom #l-eye, #mom #r-eye {
+	border-bottom: solid black 2px;
+	border-radius: 100%;
+	height: 5px;
+	transform: rotate(5deg);
+	width: 10px;
+}
+
+#mom #l-eye {
+	left: 10px;
+	top: 18px;
+}
+
+#mom #r-eye {
+	left: 30px;
+	top: 20px;
+}
+
+#mom #nose {
+	background-color: black;
+	left: 23px;
+	height: 8px;
+	top: 27px;
+	transform: rotate(9deg);
+	width: 2px;
+}
+
+#mom #mouth {
+	border-bottom: solid 2px red;
+	border-radius: 100%;
+	height: 5px;
+	left: 20px;
+	top: 33px;
+	width: 10px;
+	z-index: 2;
+}
+
+#mom #top-torso, #mom #bottom-torso {
+	background-color: rgb(214, 223, 232);
+}
+
+#mom #top-torso {
+	border-radius: 5px 5px 0 50px;
+	height: 65px;
+	left: 18px;
+	top: 54px;
+	width: 25px;
+	z-index: -1;
+}
+
+#mom #bottom-torso {
+	border-radius: 0 0 0 50px;
+	height: 35px;
+	left: 15px;
+	top: 95px;
+	transform: rotate(25deg);
+	width: 70px;
+	z-index: 1;
+}
+
+#mom #l-leg {
+	border-radius: 20px;
+	height: 15px;
+	left: 65px;
+	top: 124px;
+	transform: rotate(-6deg);
+	width: 48px;
+}
+
+#mom #r-leg {
+	border-radius: 20px;
+	height: 15px;
+	left: 65px;
+	top: 112px;
+	transform: rotate(-5deg);
+	width: 48px;
+}
+
+#mom #l-arm {
+	border-radius: 0 0 20px 20px;
+	height: 105px;
+	left: 2px;
+	top: 52px;
+	transform: rotate(20deg);
+	width: 13px;
+	z-index: -2;
+}
+
+#mom #r-arm {
+	border-radius: 0 0 20px 20px;
+	height: 95px;
+	left: 27px;
+	top: 54px;
+	transform: rotate(7deg);
+	width: 13px;
+	z-index: 2;
+}
+
+#mom #l-hand { 
+	border-radius: 0 0 100% 100%;
+	left: -5px;
+	height: 10px;
+	top: 65px;
+	transform: rotate(30deg);
+	width: 9px;
+}
+
+#mom #r-hand { 
+	border-radius: 0 0 100% 100%;
+	left: 48px;
+	height: 10px;
+	top: 65px;
+	transform: rotate(-30deg);
+	width: 9px;
+}
+
+#book {
+	left: 55px;
+	top: -25px;
+	transform: rotate(5deg);
+}
+
+#border {
+	background-color: rgb(37, 139, 139);
+	height: 45px;
+	left: 240px;
+	top: 570px;
+	width: 96px;
+}
+
+#main-pages {
+	background-color: white;
+	height: 40px;
+	left: 247px;
+	top: 570px;
+	width: 85px;
+	display: flex;
+	align-content: space-around;
+}
+
+#main-pages div {
+	height: 6px;
+	margin: 2px;
+	top: 7px;
+	left: 2px;
+	position: relative;
+	width: 11px;
+}
+
+#main-pages :nth-child(1), #main-pages :nth-child(5) {
+	background-color: rgb(195, 109, 60);
+}
+
+#main-pages :nth-child(2), #main-pages :nth-child(4) {
+	background-color: rgb(89, 132, 74);
+}
+
+#main-pages :nth-child(3) {
+	background-color: pink;
+}
+
+#l-pages {
+	background-color: rgb(37, 139, 139);
+	border-radius: 0 100% 0 0;
+	height: 9px;
+	left: 240px;
+	top: 601px;
+	width: 47px;
+}
+
+#r-pages {
+	background-color: rgb(37, 139, 139);
+	border-radius: 100% 0 0 0;
+	height: 8px;
+	left: 288px;
+	top: 602px;
+	width: 47px;
+}
+
+#crease {
+	background-color: gray;
+	height: 30px;
+	left: 288px;
+	top: 572px;
+	width: 1px;
 }
