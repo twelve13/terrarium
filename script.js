@@ -5,7 +5,7 @@ const button = document.getElementById("button");
 function show() {
 	console.log("clicked")
 	for(let i=0; i<divs.length; i++){
-		setTimeout(function(){divs[i].classList.add("showme")}, i*300);
+		setTimeout(function(){divs[i].classList.add("showme")}, i*200);
 	}
 }
 

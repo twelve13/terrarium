@@ -824,6 +824,6 @@ main * {
 }
 
 .showme {
-	transition: 200ms ease;
+	transition: 500ms ease;
 	opacity: 1;
 }
