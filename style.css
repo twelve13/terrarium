@@ -2,6 +2,10 @@
 	position: absolute;
 }
 
+main {
+	left: 300px;
+}
+
 #container-opening {
 	background-color: rgb(51,139, 133);
 	border-radius: 100%;
@@ -551,7 +555,7 @@
 	left: 2px;
 	top: 52px;
 	transform: rotate(20deg);
-	width: 13px;
+	width: 12px;
 	z-index: -2;
 }
 
@@ -561,26 +565,8 @@
 	left: 27px;
 	top: 54px;
 	transform: rotate(7deg);
-	width: 13px;
+	width: 12px;
 	z-index: 2;
-}
-
-#mom #l-hand { 
-	border-radius: 0 0 100% 100%;
-	left: -5px;
-	height: 10px;
-	top: 65px;
-	transform: rotate(30deg);
-	width: 9px;
-}
-
-#mom #r-hand { 
-	border-radius: 0 0 100% 100%;
-	left: 48px;
-	height: 10px;
-	top: 65px;
-	transform: rotate(-30deg);
-	width: 9px;
 }
 
 #book {
@@ -652,4 +638,170 @@
 	left: 288px;
 	top: 572px;
 	width: 1px;
+}
+
+.r-plant {
+	left: 410px;
+	top: 200px;
+}
+
+.l-plant {
+	left: 437px;
+	top: 215px;
+}
+
+.plant .leaves {
+	display: flex;
+	width: 80px;
+}
+
+.leaves * {
+	border-radius: 100%;
+	height: 13px;
+	position: relative;
+	width: 35px;
+}
+
+.left-side, .right-side {
+	align-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	height: 270px;
+	width: 50px;
+}
+
+.left-side * {
+	transform: rotate(25deg);
+}
+
+.right-side * {
+	transform: rotate(-25deg);
+}
+
+.r-plant .left-side *, .r-plant .right-side *, .r-plant .stalk * {
+	background-color: rgb(37, 139, 139);
+}
+
+.l-plant .left-side *, .l-plant .right-side *, .l-plant .stalk * {
+	background-color: rgb(255, 128, 37);
+}
+
+.r-plant .stalk {
+	height: 400px;
+	width: 10px;
+}
+
+.r-plant .stalk .top {
+	height: 35px;
+	width: 13px;
+	top: -20px;
+	transform: rotate(5deg);
+}
+
+.r-plant .stalk .base {
+	height: 370px;
+	top: -25px;
+	width: 10px;
+}
+
+.l-plant .stalk {
+	height: 400px;
+	width: 10px;
+}
+
+.l-plant .stalk .top {
+	height: 35px;
+	width: 13px;
+	top: -20px;
+	transform: rotate(5deg);
+}
+
+.l-plant .stalk .base {
+	height: 350px;
+	top: -25px;
+	width: 10px;
+}
+
+.round-plant {
+	left: 20px;
+	top: 460px;
+}
+
+.bulb {
+	background-color: rgb(235, 235, 115);
+	border-radius: 100%;
+	height: 25px;
+	width: 25px;
+}
+
+.stem {
+	background-color: rgb(235, 235, 115);
+	height: 80px;
+	left: 15px;
+	top: 10px;
+	transform: rotate(-8deg);
+	width: 5px;
+}
+
+.plant2 {
+	left: 30px;
+	top: 320px;
+}
+
+.plant2 .stem {
+	height: 220px;
+}
+
+.plant2 .bulb {
+	left: -10px;
+}
+
+.plant3 {
+	left: 50px;
+	top: 380px;
+}
+
+.plant3 .stem {
+	height: 170px;
+	transform: rotate(-4deg);
+	width: 3px;
+}
+
+.plant3 .bulb {
+	left: 2px;
+	height: 20px;
+	width: 20px;
+}
+
+.plant4 {
+	left: 70px;
+	top: 440px;
+}
+
+.plant4 .stem {
+	height: 80px;
+	transform: rotate(2deg);
+	width: 4px;
+}
+
+.plant4 .bulb {
+	left: 8px;
+}
+
+#moon {
+	background-color: rgb(235, 235, 115);
+	border-radius: 100%;
+	height: 80px;
+	left: 300px;
+	top: 200px;
+	width: 80px;
+}
+
+#moon-shadow {
+	background-color: rgb(43, 58, 70);
+	border-radius: 100%;
+	height: 70px;
+	left: 280px;
+	top: 210px;
+	width: 70px;
 }
