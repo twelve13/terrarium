@@ -2,8 +2,25 @@
 	position: absolute;
 }
 
+#button {
+	background-color: rgb(51,139, 133);
+	border-radius: 100%;
+	box-sizing: border-box;
+	color: rgb(214, 223, 232);
+	display: block;
+	height: 70px;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	width: 70px;
+}
+
 main {
 	left: 300px;
+}
+
+main * {
+	opacity: 0;
 }
 
 #container-opening {
@@ -804,4 +821,9 @@ main {
 	left: 280px;
 	top: 210px;
 	width: 70px;
+}
+
+.showme {
+	transition: 200ms ease;
+	opacity: 1;
 }
