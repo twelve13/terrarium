@@ -1,12 +1,23 @@
+const container = document.getElementsByTagName("section");
+
 const divs = document.getElementsByTagName("DIV");
 
-const button = document.getElementById("button");
+function illustrate(){
+	for(let i=0; i<container.length; i++){
+		setTimeout(function(){container[i].classList.add("showme")}, i*400);
+	};
 
-function show() {
-	console.log("clicked")
-	for(let i=0; i<divs.length; i++){
-		setTimeout(function(){divs[i].classList.add("showme")}, i*200);
-	}
-}
+	function fillJar(){
+		for(let i=0; i<divs.length; i++){
+			setTimeout(function(){divs[i].classList.add("showme")}, i*200);
+		};
+	};
 
-button.addEventListener("click", show)
+	setTimeout(fillJar, 1800);
+};
+
+
+
+
+
+
