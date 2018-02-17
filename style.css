@@ -2,19 +2,6 @@
 	position: absolute;
 }
 
-#button {
-	background-color: rgb(51,139, 133);
-	border-radius: 100%;
-	box-sizing: border-box;
-	color: rgb(214, 223, 232);
-	display: block;
-	height: 70px;
-	font-size: 20px;
-	padding: 10px;
-	text-align: center;
-	width: 70px;
-}
-
 main {
 	left: 300px;
 }
@@ -96,18 +83,6 @@ main * {
 	width: 34px;
 }
 
-#pebbles :nth-child(27) {
-	background-color: rgb(43, 58, 70);
-	height: 5px;
-	width: 340px;
-}
-
-#pebbles :nth-child(33) {
-	background-color: rgb(43, 58, 70);
-	height: 5px;
-	width: 350px;
-}
-
 #pebbles :nth-child(5n) {
 	height: 15px;
 }
@@ -118,6 +93,31 @@ main * {
 
 #pebbles :nth-child(3n+1) {
 	transform: rotate(-10deg);
+}
+
+#pebbles :nth-child(27) {
+	background-color: rgb(43, 58, 70);
+	height: 5px;
+	width: 340px;
+}
+
+#pebbles :nth-child(32) {
+	background-color: rgb(43, 58, 70);
+	height: 5px;
+	transform: rotate(0deg);
+	width: 350px;
+}
+
+#pebbles :nth-child(33), #pebbles :nth-child(34), #pebbles :nth-child(35) {
+	left: 25px;
+}
+
+#pebbles :nth-child(35) {
+	transform: rotate(45deg);
+}
+
+#pebbles :nth-child(29), #pebbles :nth-child(33) {
+	top: 15px;
 }
 
 #ground {
@@ -530,7 +530,7 @@ main * {
 }
 
 #mom #top-torso {
-	border-radius: 5px 5px 0 50px;
+	border-radius: 5px 15px 0 50px;
 	height: 65px;
 	left: 18px;
 	top: 54px;
@@ -567,7 +567,7 @@ main * {
 }
 
 #mom #l-arm {
-	border-radius: 0 0 20px 20px;
+	border-radius: 10px 10px 20px 20px;
 	height: 105px;
 	left: 2px;
 	top: 52px;
@@ -577,7 +577,7 @@ main * {
 }
 
 #mom #r-arm {
-	border-radius: 0 0 20px 20px;
+	border-radius: 10px 10px 20px 20px;
 	height: 95px;
 	left: 27px;
 	top: 54px;
@@ -606,29 +606,35 @@ main * {
 	left: 247px;
 	top: 570px;
 	width: 85px;
-	display: flex;
+}
+
+#book-images {
 	align-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	height: 30px;
+	width: 80px;
 }
 
-#main-pages div {
+#book-images div {
+	background-color: blue;
 	height: 6px;
-	margin: 2px;
-	top: 7px;
 	left: 2px;
+	margin: 3.3px;
 	position: relative;
-	width: 11px;
+	width: 13px;
 }
 
-#main-pages :nth-child(1), #main-pages :nth-child(5) {
-	background-color: rgb(195, 109, 60);
-}
-
-#main-pages :nth-child(2), #main-pages :nth-child(4) {
+#book-images div:nth-of-type(2n) {
 	background-color: rgb(89, 132, 74);
 }
 
-#main-pages :nth-child(3) {
+#book-images div:nth-of-type(3n) {
 	background-color: pink;
+}
+
+#book-images div:nth-of-type(4n) {
+	background-color: rgb(195, 109, 60);
 }
 
 #l-pages {
@@ -636,7 +642,7 @@ main * {
 	border-radius: 0 100% 0 0;
 	height: 9px;
 	left: 240px;
-	top: 601px;
+	top: 602px;
 	width: 47px;
 }
 
@@ -645,15 +651,15 @@ main * {
 	border-radius: 100% 0 0 0;
 	height: 8px;
 	left: 288px;
-	top: 602px;
+	top: 603px;
 	width: 47px;
 }
 
 #crease {
-	background-color: gray;
+	background-color: lightgray;
 	height: 30px;
-	left: 288px;
-	top: 572px;
+	left: 40.4px;
+	top: 5px;
 	width: 1px;
 }
 
