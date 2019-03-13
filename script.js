@@ -9,13 +9,13 @@ function illustrate(){
 
 	for(let i=0; i<container.length; i++){
 		console.log(container[i]);
-		function(){container[i].classList.add("showme")}
+		container[i].classList.add("showme")
 	};
 
 	function fillJar(){
 		for(let i=0; i<divs.length; i++){
 			console.log(divs[i].classList);
-			function(){divs[i].classList.add("showme")}
+			divs[i].classList.add("showme")
 		};
 	};
 
