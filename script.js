@@ -8,14 +8,17 @@ function illustrate(){
 	console.log("illustrating");
 
 	for(let i=0; i<container.length; i++){
-		console.log(container[i]);
-		container[i].classList.add("showme")
+		(function(i) {
+			setTimeout(
+				function(){container[i].classList.add("showme")}, i*400);
+		})(i);
 	};
 
 	function fillJar(){
 		for(let i=0; i<divs.length; i++){
-			console.log(divs[i].classList);
-			divs[i].classList.add("showme")
+			(function(i) {
+				setTimeout(function(){divs[i].classList.add("showme")}, i*200);
+			})(i);
 		};
 	};
 
