@@ -9,13 +9,13 @@ function illustrate(){
 
 	for(let i=0; i<container.length; i++){
 		console.log(container[i]);
-		setTimeout(function(){container[i].classList.add("showme")}, i*400);
+		function(){container[i].classList.add("showme")}
 	};
 
 	function fillJar(){
 		for(let i=0; i<divs.length; i++){
 			console.log(divs[i].classList);
-			setTimeout(function(){divs[i].classList.add("showme")}, i*200);
+			function(){divs[i].classList.add("showme")}
 		};
 	};
 
