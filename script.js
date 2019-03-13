@@ -8,12 +8,13 @@ function illustrate(){
 	console.log("illustrating");
 
 	for(let i=0; i<container.length; i++){
-		setTimeout(function(){container[i].className += " showme"}, i*400);
+		console.log(container[i])
+		setTimeout(function(){container[i].classList.add("showme")}, i*400);
 	};
 
 	function fillJar(){
 		for(let i=0; i<divs.length; i++){
-			setTimeout(function(){divs[i].className += " showme"}, i*200);
+			setTimeout(function(){divs[i].classList.add("showme")}, i*200);
 		};
 	};
 
